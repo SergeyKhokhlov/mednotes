@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for i in notes_list %}
+            <a href="note/{{loop['index']}}"><div style="margin-top: 100px;
+            border: 1px solid lightgrey; margin-bottom: -90px;
+        margin-left: 10px; margin-right: 200px; padding-top: 30px;
+        padding-bottom: 30px; padding-left: 60px; font-size: 20px;">{{i}}</div></a>
+    {% endfor %}
+{% endblock %}

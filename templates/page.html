@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 style="text-align: center; margin-top: 3%;">{{name}}</h1>
+    {% for i in text %}
+        <p align="justify" style="margin-left: 10%; margin-right: 10%; margin-top: 5%;
+         margin-bottom: -6%;">{{i}}</p><br>
+    {% endfor %}
+{% endblock %}
